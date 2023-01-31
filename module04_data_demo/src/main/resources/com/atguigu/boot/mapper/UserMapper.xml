@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace ： 需要被映射的接口全类名 -->
+<mapper namespace="com.atguigu.boot.mapper.UserMapper">
+    <!-- User queryUserById(@Param("id") Integer id); -->
+    <select id="queryUserById" resultType="com.atguigu.boot.pojo.User">
+        select * from `user` where `id` = #{id}
+    </select>
+</mapper>

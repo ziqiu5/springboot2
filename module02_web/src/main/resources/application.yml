@@ -1,0 +1,11 @@
+#设置工程路径
+server:
+  servlet:
+    context-path: /boot
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo
+    username: root
+    password: cjx1125061985

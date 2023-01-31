@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user02" class="com.atguigu.boot.pojo.User">
+        <property name="userId" value="207"/>
+        <property name="userName" value="小龙"/>
+        <property name="password" value="456"/>
+        <property name="pet" ref="pet02"/>
+    </bean>
+
+    <bean id="pet02" class="com.atguigu.boot.pojo.Pet">
+        <property name="name" value="小白猫"/>
+    </bean>
+
+
+</beans>

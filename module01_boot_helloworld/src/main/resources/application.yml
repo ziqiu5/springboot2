@@ -1,0 +1,21 @@
+
+
+
+person:
+  userName: ziqiu
+  boss: false
+  birth: 2002/08/29
+  age: 21
+  interests: [篮球,足球,游泳]
+  animal: [小狗、小鸡、小鸟、小马]
+  score:
+    english: {first: 80,second: 70,third: 88}
+    chinese: {first: 75,second: 66,third: 92}
+  salarys: [17000,18000,19000]
+  pet: {name:小马}
+  all-pets:
+    sick: [{name: tom},{name: jack}]
+    health: [{name: mario},{name: jerry}]
+server:
+  servlet:
+    context-path: /boot

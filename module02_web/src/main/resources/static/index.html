@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+</head>
+<body>
+<h1>首页</h1>
+<a th:href="@{/atguigu}">访问硅谷</a>
+
+<form action="http://localhost:8080/user" method="post">
+	<table align="center" border="1" cellspacing="0" cellpadding="1">
+		<tr>
+			<th colspan="2">注册</th>
+		</tr>
+		<tr>
+			<td>姓名</td>
+			<td><input type="text" placeholder="请输入姓名" name="username"/></td>
+		</tr>
+		<tr>
+			<td>密码</td>
+			<td><input type="text" placeholder="请输入密码" name="password"/></td>
+		</tr>
+		<tr>
+			<td><input type="submit" value="注册"></td>
+		</tr>
+	</table>
+
+</form>
+
+
+</body>
+</html>

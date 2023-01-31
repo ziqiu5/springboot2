@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo
+    username: root
+    password: cjx1125061985
+
+server:
+  servlet:
+    context-path: /data
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true #开启驼峰格式的转化
+    lazy-loading-enabled: true #开启懒加载
+  mapper-locations: classpath:com.atguigu.boot.mapper/*.xml
