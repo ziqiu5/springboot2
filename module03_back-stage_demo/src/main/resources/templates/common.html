@@ -46,7 +46,8 @@
 
 		<!--sidebar nav start-->
 		<ul class="nav nav-pills nav-stacked custom-nav">
-			<li class="active"><a href="index.html" th:href="@{/index}"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
+			<li class="active"><a href="index.html" th:href="@{/index}"><i class="fa fa-home"></i>
+				<span>Dashboard</span></a></li>
 			<li class="menu-list"><a href=""><i class="fa fa-laptop"></i> <span>Layouts</span></a>
 				<ul class="sub-menu-list">
 					<li><a href="blank_page.html"> Blank Page</a></li>
@@ -111,7 +112,7 @@
 			<li class="menu-list"><a href="#"><i class="fa fa-th-list"></i> <span>Data Tables</span></a>
 				<ul class="sub-menu-list">
 					<li><a href="basic_table.html" th:href="@{/basic_table}"> Basic Table</a></li>
-					<li><a href="dynamic_table.html" th:href="@{/dynamic_table}"> Advanced Table</a></li>
+					<li><a href="dynamic_table.html" th:href="@{/dynamic_table/1}"> Advanced Table</a></li>
 					<li><a href="responsive_table.html" th:href="@{/responsive_table}"> Responsive Table</a></li>
 					<li><a href="editable_table.html" th:href="@{/editable_table}"> Edit Table</a></li>
 				</ul>
@@ -167,7 +168,8 @@
 			<li th:if="${session.user==null}">
 				<!--  用户未登录时显示 登录和注册功能 -->
 				<ul><a href="#" class="fa fa-sign-in" th:href="@{/login}" style="font-size: 22px"> Sign in</a></ul>
-				<ul><a href="#" class="fa fa-sign-out" th:href="@{/registration}" style="font-size: 22px"> Sign up</a></ul>
+				<ul><a href="#" class="fa fa-sign-out" th:href="@{/registration}" style="font-size: 22px"> Sign up</a>
+				</ul>
 			</li>
 
 			<li th:if="${session.user!=null}">

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>修改员工信息</title>
+</head>
+<body>
+
+<form action="#" th:action="@{'/update_emp/'+${pageNo}}" method="post">
+	<table align="center" border="1" cellpadding="1" cellspacing="0">
+		<tr>
+			<th>员工id</th>
+			<th>姓名</th>
+			<th>年龄</th>
+			<th>邮箱</th>
+			<th>薪水</th>
+		</tr>
+		<tr>
+			<input type="hidden" name="id" th:value="${emp.id}">
+			<td th:text="${emp.id}"></td>
+			<td><input type="text" name="empName" th:value="${emp.empName}"></td>
+			<td><input type="text" name="age" th:value="${emp.age}"></td>
+			<td><input type="text" name="email" th:value="${emp.email}"></td>
+			<td><input type="text" name="sal" th:value="${emp.sal}"></td>
+		</tr>
+		<tr>
+			<td colspan="5"><input type="submit" value="确认修改"></td>
+		</tr>
+	</table>
+</form>
+
+
+</body>
+</html>

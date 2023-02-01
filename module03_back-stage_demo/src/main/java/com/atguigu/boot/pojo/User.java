@@ -1,5 +1,7 @@
 package com.atguigu.boot.pojo;
 
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,11 +17,11 @@ import lombok.ToString;
  * @Version: v1.0
  */
 
-@NoArgsConstructor
 @AllArgsConstructor
 @Data
-@ToString
 public class User {
     private String username;
     private String password;
+
+
 }
